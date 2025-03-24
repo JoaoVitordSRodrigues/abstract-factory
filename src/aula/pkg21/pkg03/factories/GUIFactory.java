@@ -11,14 +11,10 @@ import aula.pkg21.pkg03.buttons.checkboxes.Checkbox;
  *
  * @author FATEC ZONA LESTE
  */
-// Interface do padrão Abstract Factory, que define métodos para criar componentes de interface gráfica
-// (como Button e Checkbox). O padrão Abstract Factory permite criar famílias de objetos relacionados sem
-// especificar suas classes concretas. 
+
+// Interface abstrata para a fábrica GUI
+// Define um conjunto de métodos para a criação de produtos relacionados
 public interface GUIFactory {
-
-    // Método para criar um botão
-    Button createButton();
-
-    // Método para criar uma caixa de seleção
-    Checkbox createCheckbox();
+    Button createButton();   // Método para criar um botão
+    Checkbox createCheckbox(); // Método para criar um checkbox
 }

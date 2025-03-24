@@ -8,11 +8,10 @@ package aula.pkg21.pkg03.buttons.checkboxes;
  *
  * @author FATEC ZONA LESTE
  */
-// Definição de uma interface chamada Checkbox
-// Uma interface define um contrato que as classes devem seguir.
+
+// Interface abstrata para Checkbox
+// Define um produto abstrato dentro da família de produtos GUI
 public interface Checkbox {
-    // Declaração de um método sem implementação.
-    // Interfaces contêm apenas assinaturas de métodos, sem lógica interna.
+    // Método que deve ser implementado por produtos concretos
     void paint();
 }
-

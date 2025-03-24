@@ -13,18 +13,17 @@ import aula.pkg21.pkg03.buttons.checkboxes.MacOSCheckbox;
  *
  * @author FATEC ZONA LESTE
  */
-// A classe MacOSFactory é uma fábrica concreta que implementa a interface GUIFactory.
-// Sua função é criar elementos da interface gráfica específicos para o sistema MacOS.
+
+// Implementação concreta da fábrica para MacOS
+// Garante que os produtos criados pertencem à família MacOS
 public class MacOSFactory implements GUIFactory {
-    // Método para criar um botão do tipo MacOS.
     @Override
     public Button createButton() {
-        return new MacOSButton();
+        return new MacOSButton(); // Retorna um botão específico do MacOS
     }
-    // Método para criar um checkbox do tipo MasOS.
+    
     @Override
     public Checkbox createCheckbox() {
-        return new MacOSCheckbox();
+        return new MacOSCheckbox(); // Retorna um checkbox específico do MacOS
     }
 }
-
