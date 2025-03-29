@@ -4,27 +4,26 @@
  */
 package aula.pkg21.pkg03.factories;
 
-import aula.pkg21.pkg03.buttons.Button;
-import aula.pkg21.pkg03.buttons.MacOSButton;
-import aula.pkg21.pkg03.buttons.checkboxes.Checkbox;
-import aula.pkg21.pkg03.buttons.checkboxes.MacOSCheckbox;
+import aula.pkg21.pkg03.engines.EletricEngine;
+import aula.pkg21.pkg03.engines.Engine;
 
 /**
  *
  * @author FATEC ZONA LESTE
  */
-// A classe MacOSFactory é uma fábrica concreta que implementa a interface GUIFactory.
+// A classe EletricFactory é uma fábrica concreta que implementa a interface GUIFactory.
 // Sua função é criar elementos da interface gráfica específicos para o sistema MacOS.
-public class MacOSFactory implements GUIFactory {
+public class EletricFactory implements CarFactory {
     // Método para criar um botão do tipo MacOS.
     @Override
-    public Button createButton() {
-        return new MacOSButton();
+    public Engine createEngine() {
+        return new EletricEngine();
     }
     // Método para criar um checkbox do tipo MasOS.
-    @Override
+    /*@Override;
     public Checkbox createCheckbox() {
         return new MacOSCheckbox();
-    }
+    }*/
+    
 }
 

@@ -4,29 +4,28 @@
  */
 package aula.pkg21.pkg03.factories;
 
-import aula.pkg21.pkg03.buttons.Button;
-import aula.pkg21.pkg03.buttons.WindowsButton;
-import aula.pkg21.pkg03.buttons.checkboxes.Checkbox;
-import aula.pkg21.pkg03.buttons.checkboxes.WindowsCheckbox;
+import aula.pkg21.pkg03.engines.CombustionEngine;
+import aula.pkg21.pkg03.engines.Engine;
 
 /**
  *
  * @author FATEC ZONA LESTE
  */
-// A classe WindowsFactory é uma fábrica concreta que implementa a interface GUIFactory.
+// A classe CombustionFactory é uma fábrica concreta que implementa a interface CarFactory.
 // Sua função é criar elementos da interface gráfica específicos para o sistema Windows.
-public class WindowsFactory implements GUIFactory {
+public class CombustionFactory implements CarFactory {
 
     // Método para criar um botão do tipo Windows.
     @Override
-    public Button createButton() {
-        return new WindowsButton(); // Retorna uma instância de WindowsButton.
+    public Engine createEngine() {
+        return new CombustionEngine(); // Retorna uma instância de CombustionEngine.
     }
 
     // Método para criar um checkbox do tipo Windows.
-    @Override
+    /*@Override
     public Checkbox createCheckbox() {
         return new WindowsCheckbox(); // Retorna uma instância de WindowsCheckbox.
-    }
+    }*/
+
 }
 

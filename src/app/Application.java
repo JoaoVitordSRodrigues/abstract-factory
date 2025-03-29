@@ -4,25 +4,21 @@
  */
 package app;
 
-import aula.pkg21.pkg03.buttons.Button;
-import aula.pkg21.pkg03.buttons.checkboxes.Checkbox;
-import aula.pkg21.pkg03.factories.GUIFactory;
+import aula.pkg21.pkg03.engines.Engine;
+import aula.pkg21.pkg03.factories.CarFactory;
 
 /**
  *
  * @author FATEC ZONA LESTE
  */
 public class Application {
-    private Button button;
-    private Checkbox checkbox;
+    private Engine engine;
 
-    public Application(GUIFactory factory) {
-        button = factory.createButton();
-        checkbox = factory.createCheckbox();
+    public Application(CarFactory factory) {
+        engine = factory.createEngine();
     }
 
-    public void paint() {
-        button.paint();
-        checkbox.paint();
+    public void accelerate() {
+        engine.accelerate();
     }
 }
